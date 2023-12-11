@@ -6,6 +6,9 @@ app = FastAPI()
 #all the below code is plain python
 #data validation is in built with fastapi, at pydantic
 #fastAPI is typed Python
+#unlike in Flask, the errors are in JSON and not in HTML
+#Authentication is built in -OAuth, JWT, etc
+#Swagger UI is in-built at endpoint /docs, Redoc is also available at the endpoint /redoc
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
